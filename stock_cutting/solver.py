@@ -63,7 +63,7 @@ class StockCuttingSolver:
         
     def _build_model(self):
         self.model = cp_model.CpModel()
-        self.naive_max_cuts = sum(self.needed_quantities)
+        self.naive_max_cuts = max(self.needed_quantities)
         self.possible_cuts = self.generate_possible_cuts(
             needed_lengths=self.needed_lengths,
             total_length=self.total_length,
