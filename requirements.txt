@@ -1,7 +1,4 @@
 jupyter
 pandas>1
 numpy
-matplotlib
-seaborn
-pymc3
 ortools
